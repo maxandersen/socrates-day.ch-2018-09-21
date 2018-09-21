@@ -8,12 +8,12 @@ Firstname Lastname <author@asciidoctor.org>
 
 Content entered directly below the header but before the first section heading is called the preamble.
 
-== First level heading
+== First level whatever heading
 
 This is a paragraph with a *bold* word and an _italicized_ word.
 
 .Image caption
-image::image-file-name.png[I am the image alt text.]
+image::https://pbs.twimg.com/profile_images/1000654399054798848/eWswx1MH_400x400.jpg[I am the image alt text.]
 
 This is another paragraph.footnote:[I am footnote text and will be displayed at the bottom of the article.]
 
@@ -58,6 +58,19 @@ Listing block content is commonly used to preserve code input.
 
 |Column 1, row 2
 |Column 2, row 2
+|===
+
+[format="csv", separator=";", options="header"]
+|===
+Name;Description
+Asciidoctor;Awesome way to write documentation
+|===
+
+= Table with external data
+ 
+[format="csv", options="header"]
+|===
+include::tools.csv[]
 |===
 
 ====== Fifth level heading
